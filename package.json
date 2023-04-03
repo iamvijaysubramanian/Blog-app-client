@@ -1,6 +1,5 @@
 {
   "name": "blog-app-frontend",
-  "proxy": "https://blog-app-wsrz.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
