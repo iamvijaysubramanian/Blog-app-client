@@ -10,7 +10,6 @@ import { MdModeEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import { Box, IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import toast from "react-hot-toast";
 import axios from "axios";
 
 export default function BlogCard({
@@ -30,7 +29,7 @@ export default function BlogCard({
   const handleDelete = async () => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:8080/api/v1/blog/delete-blog/${id}`
+        `https://blog-app-wsrz.onrender.com/api/v1/blog/delete-blog/${id}`
       );
       if (data?.success) {
         alert("Blog Deleted");

@@ -23,7 +23,7 @@ const CreateBlog = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/blog/create-blog",
+        "https://blog-app-wsrz.onrender.com/api/v1/blog/create-blog",
         {
           title: inputs.title,
           description: inputs.description,
